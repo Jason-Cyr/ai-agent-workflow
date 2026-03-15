@@ -18,10 +18,12 @@ This system fixes that by connecting three tools through a persistent AI agent:
 |-------|------|---------|
 | 🧠 **Brain** | [Obsidian](https://obsidian.md) | Shared knowledge base — notes, projects, daily journals |
 | ⚡ **Structure** | [Linear](https://linear.app) | Task management — assign work, track progress, close the loop |
-| 💬 **Pulse** | [Slack](https://slack.com) | Real-time communication — ad hoc requests, proactive check-ins |
+| 💬 **Pulse** | [Slack](https://slack.com)* | Real-time communication — ad hoc requests, proactive check-ins |
 | 🔗 **Glue** | [OpenClaw](https://openclaw.ai) | The agent platform — persistent identity, memory, tool connections |
 
 The agent reads and writes to your Obsidian vault, picks up tasks from Linear, and communicates through Slack. It doesn't wait to be prompted — it checks in, flags things, and does work.
+
+*\*I use Slack, but OpenClaw supports many communication channels — Discord, Telegram, WhatsApp, Signal, iMessage, and more. Use whichever one you already live in. The system works the same regardless of which channel you pick.*
 
 ---
 
@@ -57,7 +59,7 @@ The whole thing happens across three tools but feels like one workflow.
 
 - [Obsidian](https://obsidian.md) (free) — desktop app for notes
 - [Linear](https://linear.app) (free tier works) — project management
-- [Slack](https://slack.com) (free tier works) — messaging
+- A messaging platform — Slack, Discord, Telegram, WhatsApp, Signal, or any [OpenClaw-supported channel](https://docs.openclaw.ai)
 - [OpenClaw](https://openclaw.ai) — AI agent platform
 - An AI model API key (Anthropic Claude recommended)
 
@@ -158,26 +160,28 @@ Set the vault path in your agent's configuration or `TOOLS.md`:
 
 ---
 
-## Step 3: Connect Slack (Real-Time Layer)
+## Step 3: Connect a Communication Channel (Real-Time Layer)
 
-Slack gives your agent a real-time communication channel with you.
+Your agent needs a real-time way to talk to you — and you to it.
 
-### Set Up the Slack Integration
+OpenClaw supports multiple channels: **Slack, Discord, Telegram, WhatsApp, Signal, iMessage, IRC, Google Chat, LINE**, and more. Pick whichever one you already use. I chose Slack because it's where I already work, but the system works identically on any channel.
 
-Follow the [OpenClaw Slack guide](https://docs.openclaw.ai/channels/slack) to connect Slack as a channel.
+### Set Up Your Channel
 
-### What You Get
+Follow the [OpenClaw channels guide](https://docs.openclaw.ai) to connect your preferred channel.
+
+### What You Get (on any channel)
 
 - **DM your agent** for quick questions, brainstorming, ad hoc requests
 - **Your agent DMs you** for proactive check-ins, task updates, and nudges
-- **Thread-based conversations** keep topics organized
+- **Thread-based conversations** keep topics organized (on platforms that support threads)
 - **Reactions** for lightweight acknowledgments
 
 ### Pro Tips
 
 - Tell your agent to always reply in threads (put this in AGENTS.md)
 - Set up proactive check-ins — morning briefings, evening reflections
-- Your agent can reference Obsidian notes in any Slack conversation
+- Your agent can reference Obsidian notes in any conversation
 
 ---
 
