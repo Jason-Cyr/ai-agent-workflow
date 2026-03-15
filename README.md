@@ -197,11 +197,32 @@ If you don't have one, [create a Linear workspace](https://linear.app). The free
 
 This is the most powerful part. Your agent shows up as a team member in Linear — assignable, mentionable, and responsive.
 
-1. Create a Linear OAuth application for your agent
-2. Configure the webhook to route issue assignments and mentions to OpenClaw
-3. Set up your agent to respond to Linear events
+The setup involves creating a Linear OAuth app, configuring webhooks, and wiring it to your agent. It's not complicated, but there are several steps and they depend on your specific setup.
 
-See the [OpenClaw Linear integration guide](https://docs.openclaw.ai) for detailed steps.
+**The easiest way to set this up:** Give the following prompt to your AI agent (or any AI model) and let it walk you through it:
+
+```
+I want to connect my AI agent to Linear so it can:
+- Be assigned issues as a team member
+- Respond to @mentions in comments  
+- Update issue status (In Progress, In Review, Done)
+- Post comments on issues with work summaries
+
+My setup:
+- Agent platform: OpenClaw
+- Linear workspace: [your workspace name]
+- Agent runs on: [your machine — e.g., Mac, Linux server, etc.]
+
+Walk me through the full setup:
+1. Creating a Linear OAuth application
+2. Setting up a webhook to receive issue assignments and mentions
+3. Configuring my agent to process Linear events and respond
+4. Testing the integration end-to-end
+
+Give me the specific steps, not just concepts.
+```
+
+This will get you a tailored walkthrough based on your exact setup. The agent can even help you write the webhook handler.
 
 ### The Workflow
 
