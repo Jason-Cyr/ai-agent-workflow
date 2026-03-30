@@ -331,6 +331,7 @@ Any project management tool with an API works in principle. Linear is recommende
 
 ## Resources
 
+- [Prompt Library](https://github.com/Jason-Cyr/prompt-library) — prompts, skills, and workflows for OpenClaw agents (including the DefenseClaw security setup)
 - [OpenClaw Documentation](https://docs.openclaw.ai)
 - [OpenClaw Discord](https://discord.com/invite/clawd)
 - [Obsidian](https://obsidian.md)
